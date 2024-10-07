@@ -2,7 +2,7 @@ if DEF(FAITHFUL)
 	db  70,  90,  70,  40,  60,  70 ; 400 BST
 	;   hp  atk  def  spe  sat  sdf
 else
-	db  70,  90,  70,  80,  60,  70 ; 440 BST
+	db  70,  100,  70,  100,  50,  70 ; 460 BST
 	;   hp  atk  def  spe  sat  sdf
 endc
 
@@ -16,7 +16,7 @@ endc
 	db NO_ITEM, NO_ITEM ; held items
 	dn GENDER_F50, HATCH_FAST ; gender ratio, step cycles to hatch
 
-	abilities_for ARIADOS, SWARM, INSOMNIA, SNIPER
+	abilities_for ARIADOS, SWARM, INTIMIDATE, SNIPER
 	db GROWTH_FAST ; growth rate
 	dn EGG_BUG, EGG_BUG ; egg groups
 
