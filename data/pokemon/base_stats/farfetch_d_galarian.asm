@@ -7,7 +7,7 @@
 	db NO_ITEM, LEEK ; held items
 	dn GENDER_F50, HATCH_MEDIUM_FAST ; gender ratio, step cycles to hatch
 
-	abilities_for FARFETCH_D_GALARIAN, STEADFAST, SHARPNESS, SCRAPPY
+	abilities_for FARFETCH_D_GALARIAN, STEADFAST, SHEERFORCE, SCRAPPY
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_FLYING, EGG_GROUND ; egg groups
 
