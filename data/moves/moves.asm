@@ -75,7 +75,7 @@ if DEF(FAITHFUL)
 	move SING,            EFFECT_SLEEP,               0, FAIRY,      55, 15,   0, STATUS
 	move SUPERSONIC,      EFFECT_CONFUSE,             0, NORMAL,     55, 20,   0, STATUS
 else
-	move SING,            EFFECT_SLEEP,               0, FAIRY,      75, 10,   0, STATUS
+	move SING,            EFFECT_SLEEP,               0, FAIRY,      70, 10,   0, STATUS
 	move SUPERSONIC,      EFFECT_CONFUSE,             0, NORMAL,     65, 20,   0, STATUS
 endc
 	move SONIC_BOOM,      EFFECT_STATIC_DAMAGE,      20, NORMAL,     90, 20,   0, SPECIAL
@@ -112,7 +112,7 @@ endc
 	move SOLAR_BEAM,      EFFECT_SOLAR_BEAM,        120, GRASS,     100, 10,   0, SPECIAL
 	move POISONPOWDER,    EFFECT_POISON,              0, POISON,     75, 35,   0, STATUS
 	move STUN_SPORE,      EFFECT_PARALYZE,            0, GRASS,      75, 30,   0, STATUS
-	move SLEEP_POWDER,    EFFECT_SLEEP,               0, GRASS,      75, 15,   0, STATUS
+	move SLEEP_POWDER,    EFFECT_SLEEP,               0, GRASS,      75, 10,   0, STATUS
 	move PETAL_DANCE,     EFFECT_RAMPAGE,           120, GRASS,     100, 10,   0, SPECIAL
 	move STRING_SHOT,     EFFECT_SPEED_DOWN_2,        0, BUG,        95, 40,   0, STATUS
 	move DRAGON_RAGE,     EFFECT_STATIC_DAMAGE,      40, DRAGON,    100, 10,   0, SPECIAL
@@ -136,7 +136,7 @@ endc
 	move TOXIC,           EFFECT_TOXIC,               0, POISON,     90, 10,   0, STATUS
 	move CONFUSION,       EFFECT_CONFUSE_HIT,        50, PSYCHIC,   100, 25,  10, SPECIAL
 	move PSYCHIC_M,       EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC,   100, 10,  10, SPECIAL
-	move HYPNOSIS,        EFFECT_SLEEP,               0, PSYCHIC,    75, 10,   0, STATUS
+	move HYPNOSIS,        EFFECT_SLEEP,               0, PSYCHIC,    80,  5,   0, STATUS
 	move HONE_CLAWS,      EFFECT_HONE_CLAWS,          0, DARK,       -1, 40,   0, STATUS
 	move AGILITY,         EFFECT_SPEED_UP_2,          0, PSYCHIC,    -1, 30,   0, STATUS
 	move QUICK_ATTACK,    EFFECT_PRIORITY_HIT,       40, NORMAL,    100, 30,   0, PHYSICAL
@@ -196,7 +196,7 @@ endc
 	move TRANSFORM,       EFFECT_TRANSFORM,           0, NORMAL,     -1, 10,   0, STATUS
 	move WATER_PULSE,     EFFECT_CONFUSE_HIT,        60, WATER,     100, 20,  20, SPECIAL
 	move DIZZY_PUNCH,     EFFECT_CONFUSE_HIT,        70, FAIRY,     90, 15,  50, PHYSICAL
-	move SPORE,           EFFECT_SLEEP,               0, GRASS,     100, 10,   0, STATUS
+	move SPORE,           EFFECT_SLEEP,               0, GRASS,     100,  5,   0, STATUS
 	move FLASH,           EFFECT_ACCURACY_DOWN,       0, NORMAL,    100, 20,   0, STATUS
 	move EXTRASENSORY,    EFFECT_FLINCH_HIT,         80, PSYCHIC,   100, 15,  20, SPECIAL
 	move SPLASH,          EFFECT_SPLASH,              0, NORMAL,     -1, 40,   0, STATUS
@@ -227,7 +227,7 @@ endc
 	move DRAIN_PUNCH,     EFFECT_LEECH_HIT,          75, FIGHTING,  100, 10,   0, PHYSICAL
 	move THIEF,           EFFECT_THIEF,              60, DARK,      100, 25, 100, PHYSICAL
 	move WILL_O_WISP,     EFFECT_BURN,                0, FIRE,       85, 15,   0, STATUS
-	move ZEN_HEADBUTT,    EFFECT_FLINCH_HIT,         80, PSYCHIC,    100, 15,  20, PHYSICAL
+	move ZEN_HEADBUTT,    EFFECT_FLINCH_HIT,         80, PSYCHIC,   100, 15,  20, PHYSICAL
 	move FACADE,          EFFECT_CONDITIONAL_BOOST,  70, NORMAL,    100, 20,   0, PHYSICAL
 	move FLAME_CHARGE,    EFFECT_SPEED_UP_HIT,       50, FIRE,      100, 20, 100, PHYSICAL
 	move HYPER_VOICE,     EFFECT_NORMAL_HIT,         90, NORMAL,    100, 10,   0, SPECIAL
