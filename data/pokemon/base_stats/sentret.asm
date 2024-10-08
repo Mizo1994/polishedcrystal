@@ -1,4 +1,4 @@
-	db  35,  46,  34,  20,  35,  45 ; 215 BST
+	db  35,  46,  34,  50,  35,  45 ; 245 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db NORMAL, NORMAL ; type
@@ -7,7 +7,7 @@
 	db NO_ITEM, ORAN_BERRY ; held items
 	dn GENDER_F50, HATCH_FAST ; gender ratio, step cycles to hatch
 
-	abilities_for SENTRET, RUN_AWAY, KEEN_EYE, FRISK
+	abilities_for SENTRET, RUN_AWAY, KEEN_EYE, FURCOAT
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
