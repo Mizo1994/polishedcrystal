@@ -195,7 +195,7 @@ endc
 	move BRAVE_BIRD,      EFFECT_RECOIL_HIT,        120, FLYING,    100, 15,   0, PHYSICAL
 	move TRANSFORM,       EFFECT_TRANSFORM,           0, NORMAL,     -1, 10,   0, STATUS
 	move WATER_PULSE,     EFFECT_CONFUSE_HIT,        60, WATER,     100, 20,  20, SPECIAL
-	move DIZZY_PUNCH,     EFFECT_CONFUSE_HIT,        70, NORMAL,     90, 10,  50, PHYSICAL
+	move DIZZY_PUNCH,     EFFECT_CONFUSE_HIT,        70, FAIRY,     90, 10,  50, PHYSICAL
 	move SPORE,           EFFECT_SLEEP,               0, GRASS,     100, 10,   0, STATUS
 	move FLASH,           EFFECT_ACCURACY_DOWN,       0, NORMAL,    100, 20,   0, STATUS
 	move EXTRASENSORY,    EFFECT_FLINCH_HIT,         80, PSYCHIC,   100, 10,  30, SPECIAL
