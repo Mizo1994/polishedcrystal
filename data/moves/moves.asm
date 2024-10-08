@@ -3,7 +3,8 @@ MACRO move
 	db \2 ; effect
 	db \3 ; power (0 for status moves, 1 for nonstandard base power)
 	db \4 ; type
-	db \5 ; accuracy (-1 for moves that ignore accuracy checks)
+	db \5 ; accuracy (-1 for moves that i
+gnore accuracy checks)
 	db \6 ; pp
 	db \7 ; effect chance
 	db \8 ; category
@@ -214,7 +215,7 @@ endc
 	move BONEMERANG,      EFFECT_DOUBLE_HIT,         50, GROUND,     90, 10,   0, PHYSICAL
 	move REST,            EFFECT_HEAL,                0, PSYCHIC,    -1, 5,    0, STATUS
 	move ROCK_SLIDE,      EFFECT_FLINCH_HIT,         75, ROCK,       90, 10,  30, PHYSICAL
-	move HYPER_FANG,      EFFECT_FLINCH_HIT,         80, NORMAL,     90, 15,  10, PHYSICAL
+	move HYPER_FANG,      EFFECT_FLINCH_HIT,        100, NORMAL,     90, 15,  10, PHYSICAL
 	move BULK_UP,         EFFECT_BULK_UP,             0, FIGHTING,  100, 20,   0, STATUS
 	move CONVERSION,      EFFECT_CONVERSION,          0, NORMAL,     -1, 30,   0, STATUS
 	move TRI_ATTACK,      EFFECT_TRI_ATTACK,         80, NORMAL,    100, 10,  20, SPECIAL
