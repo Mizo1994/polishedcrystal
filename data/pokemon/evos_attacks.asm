@@ -35,8 +35,8 @@ BulbasaurEvosAttacks:
 	db 13, POISONPOWDER
 	db 13, SLEEP_POWDER
 	db 15, MUD_SLAP ; Take Down → GSC TM move
-	db 19, RAZOR_LEAF
-	db 21, TAKE_DOWN ; Sweet Scent → Take Down
+	db 19, TAKE_DOWN
+	db 21, RAZOR_LEAF ; Sweet Scent → Take Down
 	db 25, GROWTH
 	db 27, DOUBLE_EDGE
 	db 31, ANCIENTPOWER ; Worry Seed → event move
@@ -55,8 +55,8 @@ IvysaurEvosAttacks:
 	db 13, POISONPOWDER
 	db 13, SLEEP_POWDER
 	db 15, MUD_SLAP ; Take Down → GSC TM move
-	db 20, RAZOR_LEAF
-	db 23, TAKE_DOWN ; Sweet Scent → Take Down
+	db 20, TAKE_DOWN
+	db 24, RAZOR_LEAF ; Sweet Scent → Take Down
 	db 28, GROWTH
 	db 31, DOUBLE_EDGE
 	db 36, ANCIENTPOWER ; Worry Seed → event move
@@ -70,13 +70,14 @@ VenusaurEvosAttacks:
 	db 1, PETAL_DANCE ; evolution move
 	db 1, OUTRAGE ; HGSS tutor move
 	db 1, TACKLE
+	db 1, RAZOR_LEAF
 	db 3, GROWL
 	db 7, LEECH_SEED
 	db 9, VINE_WHIP
 	db 13, POISONPOWDER
 	db 13, SLEEP_POWDER
 	db 15, MUD_SLAP ; Take Down → GSC TM move
-	db 20, RAZOR_LEAF
+	db 20, TAKE_DOWN
 	db 23, TAKE_DOWN ; Sweet Scent → Take Down
 	db 28, GROWTH
 	db 31, DOUBLE_EDGE
@@ -94,10 +95,11 @@ CharmanderEvosAttacks:
 	db 1, GROWL
 	db 7, EMBER
 	db 10, SMOKESCREEN
+	db 13, BITE ; 
 	db 16, METAL_CLAW ; Dragon Rage → TM move
 	db 19, DRAGON_RAGE ; Scary Face → Dragon Rage
-	db 25, SCARY_FACE ; Fire Fang → Scary Face
-	db 28, FLAME_CHARGE ; Flame Burst → TM move
+	db 23, FLAME_CHARGE ; Flame Burst → TM move
+	db 28, SCARY_FACE ; Fire Fang → Scary Face
 	db 34, SLASH
 	db 37, FLAMETHROWER
 	db 43, FIRE_SPIN
@@ -112,11 +114,12 @@ CharmeleonEvosAttacks:
 	db 1, GROWL
 	db 7, EMBER
 	db 10, SMOKESCREEN
+	db 13, BITE ;
 	db 17, METAL_CLAW ; Dragon Rage → TM move
 	db 21, DRAGON_RAGE ; Scary Face → Dragon Rage
-	db 28, SCARY_FACE ; Fire Fang → Scary Face
-	db 32, FLAME_CHARGE ; Flame Burst → TM move
-	db 39, SLASH
+	db 26, FLAME_CHARGE ; Flame Burst → TM move
+	db 29, SCARY_FACE ; Fire Fang → Scary Face
+	db 37, SLASH
 	db 43, FLAMETHROWER
 	db 50, FIRE_SPIN
 	db 54, CRUNCH
@@ -127,6 +130,7 @@ CharizardEvosAttacks:
 	db -1 ; no more evolutions
 	db 1, WING_ATTACK ; evolution move
 	db 1, FLARE_BLITZ
+	db 1, BITE
 	db 1, DRAGONBREATH
 	db 1, DRAGON_CLAW
 	db 1, SHADOW_CLAW
@@ -191,6 +195,7 @@ WartortleEvosAttacks:
 BlastoiseEvosAttacks:
 	db -1 ; no more evolutions
 	db 1, FLASH_CANNON ; evolution move
+	db 1, CRUNCH ; new move
 	db 1, AURA_SPHERE ; new move
 	db 1, ZAP_CANNON ; event move
 	db 1, OUTRAGE ; HGSS tutor move
@@ -235,6 +240,7 @@ ButterfreeEvosAttacks:
 	db 1, TACKLE ; Caterpie move
 	db 1, STRING_SHOT ; Caterpie move
 	db 1, GUST
+	db 1, MEGA_DRAIN
 	db 11, CONFUSION
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
@@ -249,6 +255,7 @@ ButterfreeEvosAttacks:
 	db 41, HEALINGLIGHT ; Tailwind → new move
 	db 43, AIR_SLASH
 	db 47, PSYCHIC_M ; Quiver Dance → TM move
+	db 53, PETAL_DANCE ;
 	db -1 ; no more level-up moves
 
 WeedleEvosAttacks:
@@ -284,6 +291,7 @@ BeedrillEvosAttacks:
 	db 38, AGILITY
 	db 41, SWORDS_DANCE ; Endeavor → TM move
 	db 44, OUTRAGE ; Fell Stinger → LGPE move
+	db 52, SUCKER_PUNCH
 	db -1 ; no more level-up moves
 
 PidgeyEvosAttacks:
