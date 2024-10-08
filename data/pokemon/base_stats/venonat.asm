@@ -1,4 +1,4 @@
-	db  60,  55,  50,  45,  40,  55 ; 305 BST
+	db  60,  45,  50,  45,  70,  55 ; 325 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db BUG, POISON ; type
