@@ -1,4 +1,4 @@
-	db  70, 110, 100,  50,  50,  60 ; 440 BST
+	db  90, 110, 100,  50,  50,  60 ; 460 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db STEEL, STEEL ; type
