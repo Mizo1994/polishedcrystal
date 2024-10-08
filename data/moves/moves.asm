@@ -14,10 +14,10 @@ Moves::
 	table_width MOVE_LENGTH, Moves
 	move ACROBATICS,      EFFECT_CONDITIONAL_BOOST,  55, FLYING,    100, 15,   0, PHYSICAL
 	move KARATE_CHOP,     EFFECT_NORMAL_HIT,         50, FIGHTING,  100, 25,   0, PHYSICAL
-	move DOUBLE_SLAP,     EFFECT_MULTI_HIT,          15, NORMAL,     85, 10,   0, PHYSICAL
+	move DOUBLE_SLAP,     EFFECT_DOUBLE_HIT,         30, FAIRY,      85, 10,   0, PHYSICAL
 	move AERIAL_ACE,      EFFECT_ALWAYS_HIT,         60, FLYING,     -1, 20,   0, PHYSICAL
 	move DRAGON_CLAW,     EFFECT_NORMAL_HIT,         80, DRAGON,    100, 15,   0, PHYSICAL
-	move PAY_DAY,         EFFECT_PAY_DAY,            40, NORMAL,    100, 20,   0, PHYSICAL
+	move PAY_DAY,         EFFECT_PAY_DAY,            50, NORMAL,    100, 20,   0, PHYSICAL
 	move FIRE_PUNCH,      EFFECT_BURN_HIT,           75, FIRE,      100, 15,  10, PHYSICAL
 	move ICE_PUNCH,       EFFECT_FREEZE_HIT,         75, ICE,       100, 15,  10, PHYSICAL
 	move THUNDERPUNCH,    EFFECT_PARALYZE_HIT,       75, ELECTRIC,  100, 15,  10, PHYSICAL
@@ -41,7 +41,7 @@ else
 endc
 	move DAZZLINGLEAM,    EFFECT_NORMAL_HIT,         80, FAIRY,     100, 10,   0, SPECIAL
 	move VOLT_SWITCH,     EFFECT_SWITCH_HIT,         70, ELECTRIC,  100, 20,   0, SPECIAL
-	move VINE_WHIP,       EFFECT_NORMAL_HIT,         45, GRASS,     100, 25,   0, PHYSICAL
+	move VINE_WHIP,       EFFECT_NORMAL_HIT,         50, GRASS,     100, 25,   0, PHYSICAL
 	move STOMP,           EFFECT_STOMP,              65, NORMAL,    100, 20,  30, PHYSICAL
 	move DOUBLE_KICK,     EFFECT_DOUBLE_HIT,         30, FIGHTING,  100, 30,   0, PHYSICAL
 	move FLARE_BLITZ,     EFFECT_FLARE_BLITZ,       120, FIRE,      100, 15,  10, PHYSICAL
@@ -49,7 +49,7 @@ endc
 	move FOCUS_BLAST,     EFFECT_SP_DEF_DOWN_HIT,   120, FIGHTING,   70,  5,  10, SPECIAL
 	move TOXIC_SPIKES,    EFFECT_TOXIC_SPIKES,        0, POISON,     -1, 20,   0, STATUS
 	move HEADBUTT,        EFFECT_FLINCH_HIT,         70, NORMAL,    100, 15,  30, PHYSICAL
-	move HORN_ATTACK,     EFFECT_NORMAL_HIT,         65, NORMAL,    100, 25,   0, PHYSICAL
+	move HORN_ATTACK,     EFFECT_NORMAL_HIT,         80, NORMAL,    90, 25,   0, PHYSICAL
 	move TRICK,           EFFECT_TRICK,               0, PSYCHIC,   100, 10,   0, STATUS
 	move HEX,             EFFECT_CONDITIONAL_BOOST,  65, GHOST,     100, 10,   0, SPECIAL
 	move TACKLE,          EFFECT_NORMAL_HIT,         40, NORMAL,    100, 35,   0, PHYSICAL
@@ -71,10 +71,10 @@ endc
 	move GROWL,           EFFECT_ATTACK_DOWN,         0, NORMAL,    100, 40,   0, STATUS
 	move ROAR,            EFFECT_ROAR,                0, NORMAL,     -1, 20,   0, STATUS
 if DEF(FAITHFUL)
-	move SING,            EFFECT_SLEEP,               0, NORMAL,     55, 15,   0, STATUS
+	move SING,            EFFECT_SLEEP,               0, FAIRY,      55, 15,   0, STATUS
 	move SUPERSONIC,      EFFECT_CONFUSE,             0, NORMAL,     55, 20,   0, STATUS
 else
-	move SING,            EFFECT_SLEEP,               0, NORMAL,     75, 15,   0, STATUS
+	move SING,            EFFECT_SLEEP,               0, FAIRY,      75, 15,   0, STATUS
 	move SUPERSONIC,      EFFECT_CONFUSE,             0, NORMAL,     65, 20,   0, STATUS
 endc
 	move SONIC_BOOM,      EFFECT_STATIC_DAMAGE,      20, NORMAL,     90, 20,   0, SPECIAL
