@@ -4182,12 +4182,9 @@ SentretEvosAttacks:
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
 	db 13, FURY_STRIKES ; Fury Swipes → similar move
-	db 16, DIZZY_PUNCH ; Helping Hand → event move
-	db 16, FIRE_PUNCH ; Helping Hand → event move
-	db 16, ICE_PUNCH ; Helping Hand → event move
-	db 16, THUNDERPUNCH ; Helping Hand → event move
+	db 15, HEADBUTT ; Slam → tutor move
 	db 18, SUPER_FANG ; Follow Me → HGSS tutor move
-	db 22, HEADBUTT ; Slam → tutor move
+	db 22, DIZZY_PUNCH ; Helping Hand → event move
 	db 25, PAY_DAY
 	db 28, REST
 	db 31, SUCKER_PUNCH
@@ -4205,12 +4202,9 @@ FurretEvosAttacks:
 	db 4, DEFENSE_CURL
 	db 7, QUICK_ATTACK
 	db 13, FURY_STRIKES ; Fury Swipes → similar move
-	db 19, DIZZY_PUNCH ; Helping Hand → event move
-	db 19, FIRE_PUNCH ; Helping Hand → event move
-	db 19, ICE_PUNCH ; Helping Hand → event move
-	db 19, THUNDERPUNCH ; Helping Hand → event move
+	db 17, HEADBUTT ; Helping Hand → event move
 	db 22, SUPER_FANG ; Follow Me → HGSS tutor move
-	db 25, HEADBUTT ; Slam → tutor move
+	db 25, DIZZY_PUNCH ; Slam → tutor move
 	db 28, PAY_DAY
 	db 31, REST
 	db 36, SUCKER_PUNCH
