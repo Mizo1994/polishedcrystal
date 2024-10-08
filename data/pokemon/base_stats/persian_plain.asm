@@ -7,7 +7,7 @@
 	db NO_ITEM, QUICK_CLAW ; held items
 	dn GENDER_F50, HATCH_MEDIUM_FAST ; gender ratio, step cycles to hatch
 
-	abilities_for PERSIAN, LIMBER, TECHNICIAN, UNNERVE
+	abilities_for PERSIAN, PICKUP, TECHNICIAN, UNNERVE
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
