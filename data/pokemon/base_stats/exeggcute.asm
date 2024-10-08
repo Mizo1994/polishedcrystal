@@ -1,4 +1,4 @@
-	db  60,  40,  80,  40,  60,  45 ; 325 BST
+	db  60,  40,  80,  40,  70,  45 ; 335 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db GRASS, PSYCHIC ; type
