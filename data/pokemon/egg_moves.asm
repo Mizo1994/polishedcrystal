@@ -384,6 +384,7 @@ DrowzeeEggMoves:
 	db BARRIER
 	db LIGHT_SCREEN
 	db BELLY_DRUM
+	db DREAM_EATER
 	db $ff
 
 KrabbyEggMoves:
@@ -393,6 +394,7 @@ KrabbyEggMoves:
 	db DIG
 	db CALM_MIND
 	db KNOCK_OFF
+	db CROSS_CHOP
 	db $ff
 
 ExeggcuteEggMoves:
@@ -493,6 +495,7 @@ LaprasEggMoves:
 
 EeveeEggMoves:
 	db CHARM
+	db EXTREMESPEED
 	db $ff
 
 OmanyteEggMoves:
@@ -572,6 +575,8 @@ SentretEggMoves:
 	db FOCUS_ENERGY
 	db PURSUIT
 	db REVERSAL
+	db DRAIN_PUNCH
+	db EXTREMESPEED
 	db SLASH
 	db DOUBLE_EDGE
 	db TRICK
