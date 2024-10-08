@@ -266,6 +266,7 @@ TentacoolEggMoves:
 	db RAPID_SPIN
 	db SAFEGUARD
 	db KNOCK_OFF
+	db POWER_WHIP
 	db $ff
 
 GeodudePlainEggMoves:
