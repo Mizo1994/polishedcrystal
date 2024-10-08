@@ -18,6 +18,7 @@ CharmanderEggMoves:
 	db BITE
 	db CRUNCH
 	db DRAGON_DANCE
+	db DRAGON_RAGE
 	db DRAGONBREATH
 	db FLARE_BLITZ
 	db OUTRAGE
@@ -214,6 +215,7 @@ GrowlitheHisuianEggMoves:
 	db DOUBLE_KICK
 	db FIRE_SPIN
 	db HEALINGLIGHT
+	db DRAGON_RAGE
 	db THRASH
 	db CRUNCH
 	db FLARE_BLITZ
