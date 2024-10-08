@@ -496,6 +496,9 @@ LaprasEggMoves:
 EeveeEggMoves:
 	db CHARM
 	db EXTREMESPEED
+	db CURSE
+	db MUD_SLAP
+	db DOUBLE_KICK
 	db $ff
 
 OmanyteEggMoves:
