@@ -3481,7 +3481,7 @@ EeveeEvosAttacks:
 	db 1, LEER ; Tail Whip → similar move
 	db 5, MUD_SLAP ; Sand Attack → similar move
 	db 7, DOUBLE_KICK ; Baby-Doll Eyes → LGPE move
-	db 10, SWIFT
+	db 10, CHARM
 	db 13, QUICK_ATTACK
 	db 17, BITE
 	db 20, SPARK ; Covet → TM move
@@ -3493,11 +3493,11 @@ EeveeEvosAttacks:
 	db 20, RAZOR_LEAF ; Covet → TM move
 	db 20, THIEF ; Covet → TM move
 	db 23, HEAL_BELL ; Refresh → HGSS tutor move
-	db 27, TAKE_DOWN
-	db 29, CHARM
+	db 25, TAKE_DOWN
+	db 29, GROWTH
 	db 33, BATON_PASS
 	db 37, DOUBLE_EDGE
-	db 41, GROWTH ; Last Resort → event move
+	db 41, EXTREMESPEED ; Last Resort → event move
 	db 45, REVERSAL ; Trump Card → new move
 	db -1 ; no more level-up moves
 
