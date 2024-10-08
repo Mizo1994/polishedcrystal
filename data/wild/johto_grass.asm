@@ -7,7 +7,7 @@
 	wildmon 4, RATTATA
 	wildmon 5, RATTATA
 	wildmon 3, BELLSPROUT
-	wildmon 6, RATTATA
+	wildmon 6, RATTATA, ALOLAN_FORM
 	wildmon 5, BELLSPROUT
 	wildmon 6, BELLSPROUT
 	; day
@@ -15,7 +15,7 @@
 	wildmon 4, RATTATA
 	wildmon 5, RATTATA
 	wildmon 3, BELLSPROUT
-	wildmon 6, RATTATA
+	wildmon 6, RATTATA, ALOLAN_FORM
 	wildmon 5, BELLSPROUT
 	wildmon 6, BELLSPROUT
 	; nite
@@ -25,7 +25,7 @@
 	wildmon 3, BELLSPROUT
 	wildmon 6, GASTLY
 	wildmon 5, BELLSPROUT
-	wildmon 6, BELLSPROUT
+	wildmon 6, MISDREAVUS
 	end_grass_wildmons
 
 	def_grass_wildmons SPROUT_TOWER_3F
@@ -35,7 +35,7 @@
 	wildmon 5, RATTATA
 	wildmon 6, RATTATA
 	wildmon 4, BELLSPROUT
-	wildmon 7, RATTATA
+	wildmon 7, RATTATA, ALOLAN_FORM
 	wildmon 6, BELLSPROUT
 	wildmon 7, BELLSPROUT
 	; day
@@ -43,7 +43,7 @@
 	wildmon 5, RATTATA
 	wildmon 6, RATTATA
 	wildmon 4, BELLSPROUT
-	wildmon 7, RATTATA
+	wildmon 7, RATTATA, ALOLAN_FORM
 	wildmon 6, BELLSPROUT
 	wildmon 7, BELLSPROUT
 	; nite
@@ -53,7 +53,7 @@
 	wildmon 4, BELLSPROUT
 	wildmon 7, GASTLY
 	wildmon 6, BELLSPROUT
-	wildmon 7, BELLSPROUT
+	wildmon 7, MISDREAVUS
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_2F
