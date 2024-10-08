@@ -2,7 +2,7 @@ if DEF(FAITHFUL)
 	db  85,  76,  64,  90,  45,  55 ; 415 BST
 	;   hp  atk  def  spe  sat  sdf
 else
-	db  85,  86,  64, 108,  45,  55 ; 443 BST
+	db  85,  86,  64, 115,  45,  55 ; 450 BST
 	;   hp  atk  def  spe  sat  sdf
 endc
 
@@ -16,7 +16,7 @@ endc
 	db ORAN_BERRY, SITRUS_BERRY ; held items
 	dn GENDER_F50, HATCH_FAST ; gender ratio, step cycles to hatch
 
-	abilities_for FURRET, RUN_AWAY, KEEN_EYE, FRISK
+	abilities_for FURRET, ADAPTABILITY, KEEN_EYE, FURCOAT
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
