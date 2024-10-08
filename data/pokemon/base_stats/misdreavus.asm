@@ -1,7 +1,7 @@
 	db  60,  60,  60,  85,  85,  85 ; 435 BST
 	;   hp  atk  def  spe  sat  sdf
 
-	db GHOST, GHOST ; type
+	db GHOST, FAIRY ; type
 	db 45 ; catch rate
 	db 147 ; base exp
 	db NO_ITEM, SPELL_TAG ; held items
