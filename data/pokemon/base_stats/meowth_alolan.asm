@@ -1,4 +1,4 @@
-	db  40,  35,  35,  90,  50,  40 ; 290 BST
+	db  50,  45,  35,  100,  50,  50 ; 320 BST
 	;   hp  atk  def  spe  sat  sdf
 
 	db DARK, DARK ; type
