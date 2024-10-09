@@ -14,4 +14,11 @@ RooftopSaleData2:
 	dbw FULL_HEAL,     300
 	dbw ULTRA_BALL,    600
 	dbw PROTEIN,      8000
+	dbw IRON,         8000
+	dbw PROTEIN,      8000
+	dbw CARBOS,       8000
+	dbw CALCIUM,      8000
+	dbw ZINC,         8000
+	dbw HP_UP,        8000
+	dbw PP_UP,        8000
 	db -1
