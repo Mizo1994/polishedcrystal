@@ -2624,42 +2624,38 @@ CamperGroup:
 	db "Todd@"
 	db TRAINERTYPE_NORMAL
 	; party
-	dbp 17, GEODUDE
-	dbp 17, GEODUDE
-	dbp 23, PSYDUCK
+	dbp 20, MEOWTH, MALE | GALARIAN_FORM
+	dbp 20, GEODUDE
+	dbp 25, PSYDUCK
 	db -1 ; end
 
 	; CAMPER
 	db "Todd@"
 	db TRAINERTYPE_NORMAL
 	; party
-	dbp 23, GEODUDE
-	dbp 23, GEODUDE
-	dbp 26, PSYDUCK
+	dbp 30, PERRSERKER
+	dbp 30, GRAVELER
+	dbp 35, GOLDUCK
 	db -1 ; end
 
 	; CAMPER
 	db "Todd@"
 	db TRAINERTYPE_NORMAL
 	; party
-	dbp 30, GRAVELER
-	dbp 30, GRAVELER
-	dbp 30, SLUGMA
-	dbp 32, PSYDUCK
+	dbp 40, PERRSERKER
+	dbp 40, GRAVELER
+	dbp 40, SLUGMA
+	dbp 45, GOLDUCK
 	db -1 ; end
 
 	; CAMPER
 	db "Todd@"
 	db TRAINERTYPE_MOVES
 	; party
-	dbp 34, GRAVELER
-		db MUD_SLAP, BULLDOZE, SANDSTORM, ROCK_SLIDE
-	dbp 34, GRAVELER
-		db DEFENSE_CURL, ROLLOUT, MAGNITUDE, ROCK_SLIDE
-	dbp 36, MAGCARGO
-		db ROCK_THROW, DEFENSE_CURL, CALM_MIND, FLAMETHROWER
-	dbp 34, GOLDUCK
-		db DISABLE, PSYCHIC_M, SURF, CALM_MIND
+	dbp 55, PERRSERKER
+	dbp 55, GOLEM
+	dbp 55, SLUGMA
+	dbp 60, MAGCARGO
 	db -1 ; end
 
 	; CAMPER
