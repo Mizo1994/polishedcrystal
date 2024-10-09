@@ -128,7 +128,7 @@
 
 	def_water_wildmons DRAGONS_DEN_B1F
 	db 4 percent ; encounter rate
-	wildmon 25, MAGIKARP
+	wildmon 25, HORSEA
 	wildmon 30, MAGIKARP
 	wildmon 20, DRATINI
 	end_water_wildmons
