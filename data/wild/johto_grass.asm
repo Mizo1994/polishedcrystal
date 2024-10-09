@@ -1423,7 +1423,7 @@
 	wildmon 4, POLIWAG
 	wildmon 5, BELLSPROUT
 	wildmon 5, HOOTHOOT
-	wildmon 4, ZUBAT
+	wildmon 4, MURKROW
 	wildmon 5, MEOWTH, ALOLAN_FORM
 	wildmon 5, GASTLY
 	end_grass_wildmons
@@ -1448,7 +1448,7 @@
 	wildmon 8, HOPPIP
 	; nite
 	wildmon 5, WOOPER
-	wildmon 6, RATTATA
+	wildmon 6, MURKROW
 	wildmon 8, BELLSPROUT
 	wildmon 8, HOOTHOOT
 	wildmon 7, MAREEP
