@@ -138,11 +138,15 @@ FalknerGroup:
 	dbp 11, PIDGEY
 		db NO_ITEM
 		ev_spread 32 HP
-		db TACKLE, GUST, MUD_SLAP, NO_MOVE
+		db TACKLE, GUST, MUD_SLAP, ROOST
 	dbp 11, HOOTHOOT
 		db NO_ITEM
 		ev_spread 32 HP
-		db TACKLE, HYPNOSIS, PECK, CONFUSION
+		db ROOST, HYPNOSIS, PECK, CONFUSION
+	dbp 11, MURKROW
+		db NO_ITEM
+		ev_spread 32 HP
+		db PECK, CONFUSE_RAY, PURSUIT, ROOST
 	dbp 13, PIDGEOTTO
 		db PECHA_BERRY
 		ev_spread 32 HP
@@ -195,7 +199,7 @@ BugsyGroup:
 		db FORESIGHT, QUICK_ATTACK, DOUBLE_TEAM, SONIC_BOOM
 	dbp 17, SCYTHER, FEMALE
 		db NO_ITEM, ABILITY_1 | NAT_NEUTRAL
-		ev_spread 64 Atk
+		ev_spread 128 Atk
 		db QUICK_ATTACK, LEER, PURSUIT, U_TURN
 	db -1 ; end
 
@@ -378,7 +382,7 @@ endc
 		db BULK_UP, SUCKER_PUNCH, DOUBLE_KICK, RAPID_SPIN
 	dbp 31, POLIWRATH, MALE
 		db ZOOM_LENS, ABIL_POLIWRATH_WATER_ABSORB | NAT_NEUTRAL
-		ev_spread 160 Atk
+		ev_spread 200 Atk
 		db ICE_PUNCH, HYPNOSIS, WATERFALL, DYNAMICPUNCH
 	db -1 ; end
 
@@ -432,7 +436,7 @@ JasmineGroup:
 		db PURSUIT, AERIAL_ACE, METAL_CLAW, SLASH
 	dbp 37, STEELIX
 		db LEFTOVERS
-		ev_spread 192 HP
+		ev_spread 224 HP
 		db BODY_SLAM, SCREECH, ROCK_SLIDE, IRON_TAIL
 	db -1 ; end
 
@@ -1444,7 +1448,7 @@ Rival0Group:
 	db "boy@"
 	db TRAINERTYPE_ITEM
 	; party
-	dbp 4, RATTATA
+	dbp 4, EEVEE
 		db NO_ITEM
 	dbp 5, CHIKORITA
 		db ORAN_BERRY
@@ -1454,7 +1458,7 @@ Rival0Group:
 	db "boy@"
 	db TRAINERTYPE_ITEM
 	; party
-	dbp 4, RATTATA
+	dbp 4, EEVEE
 		db NO_ITEM
 	dbp 5, CYNDAQUIL
 		db ORAN_BERRY
@@ -1464,7 +1468,7 @@ Rival0Group:
 	db "boy@"
 	db TRAINERTYPE_ITEM
 	; party
-	dbp 4, RATTATA
+	dbp 4, EEVEE
 		db NO_ITEM
 	dbp 5, TOTODILE
 		db ORAN_BERRY
@@ -1487,10 +1491,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 72 Spe
 		db SUPERSONIC, ASTONISH, BITE, GUST ; default for level
-	dbp 15, GEODUDE
+	dbp 15, EEVEE
 		db NO_ITEM
 		ev_spread 72 HP
-		db MUD_SLAP, RAPID_SPIN, ROLLOUT, MAGNITUDE ; default for level
+		db MUD_SLAP, DOUBLE_KICK, CHARM, QUICK_ATTACK ; default for level
 	dbp 18, BAYLEEF
 		db ORAN_BERRY
 		ev_spread 72 Atk
@@ -1507,7 +1511,7 @@ Rival1Group:
 	dbp 16, ZUBAT
 		db NO_ITEM
 		ev_spread 72 Spe
-	dbp 15, GEODUDE
+	dbp 15, EEVEE
 		db NO_ITEM
 		ev_spread 72 HP
 	dbp 18, QUILAVA
@@ -1525,7 +1529,7 @@ Rival1Group:
 	dbp 16, ZUBAT
 		db NO_ITEM
 		ev_spread 72 Spe
-	dbp 15, GEODUDE
+	dbp 15, EEVEE
 		db NO_ITEM
 		ev_spread 72 HP
 	dbp 18, CROCONAW
@@ -1545,10 +1549,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 104 Spe
 		db TACKLE, THUNDERSHOCK, SUPERSONIC, SONIC_BOOM
-	dbp 19, DROWZEE
+	dbp 20, EEVEE
 		db NO_ITEM
 		ev_spread 104 Spe
-		db HYPNOSIS, CONFUSION, HEADBUTT, LOW_KICK
+		db RAZOR_LEAF, WATER_PULSE, BITE, QUICK_ATTACK
 	dbp 20, ZUBAT
 		db NO_ITEM
 		ev_spread 104 Spe
@@ -1571,10 +1575,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 104 Spe
 		db TACKLE, THUNDERSHOCK, SUPERSONIC, SONIC_BOOM
-	dbp 19, DROWZEE
+	dbp 20, EEVEE
 		db NO_ITEM
 		ev_spread 104 Spe
-		db HYPNOSIS, CONFUSION, HEADBUTT, LOW_KICK
+		db FLAME_CHARGE, SPARK, BITE, QUICK_ATTACK
 	dbp 20, ZUBAT
 		db NO_ITEM
 		ev_spread 104 Spe
@@ -1597,10 +1601,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 104 Spe
 		db TACKLE, THUNDERSHOCK, SUPERSONIC, SONIC_BOOM
-	dbp 19, DROWZEE
+	dbp 20, EEVEE
 		db NO_ITEM
 		ev_spread 104 Spe
-		db HYPNOSIS, CONFUSION, HEADBUTT, LOW_KICK
+		db AURORA_BEAM, DRAINING_KISS, BITE, QUICK_ATTACK
 	dbp 20, ZUBAT
 		db NO_ITEM
 		ev_spread 104 Spe
@@ -1631,6 +1635,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 232 Atk
 		db SLASH, ICE_PUNCH, HONE_CLAWS, FEINT_ATTACK
+	dbp 41, VAPOREON
+		db NO_ITEM
+		ev_spread 232 HP
+		db SCALD, RECOVER, AURORA_BEAM, DRAINING_KISS
 	dbp 43, MEGANIUM
 		db SITRUS_BERRY
 		ev_spread 72 Atk, 160 SAt ; Still has some Atk EVs for continuity
@@ -1657,6 +1665,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 232 Atk
 		db SLASH, ICE_PUNCH, HONE_CLAWS, FEINT_ATTACK
+	dbp 41, JOLTEON
+		db NO_ITEM
+		ev_spread 232 SAt
+		db THUNDERBOLT, THUNDER_WAVE, LIGHT_SCREEN, WATER_PULSE
 	dbp 43, TYPHLOSION
 		db SITRUS_BERRY
 		ev_spread 88 Atk, 72 SAt, 72 Spe
@@ -1683,6 +1695,10 @@ Rival1Group:
 		db NO_ITEM
 		ev_spread 232 Atk
 		db SLASH, ICE_PUNCH, HONE_CLAWS, FEINT_ATTACK
+	dbp 41, FLAREON
+		db NO_ITEM
+		ev_spread 232 Spe
+		db FLAME_CHARGE, CRUNCH, BODY_SLAM, SPARK
 	dbp 43, FERALIGATR
 		db SITRUS_BERRY
 		ev_spread 160 Atk, 72 Spe
@@ -1705,9 +1721,9 @@ Rival1Group:
 	dbp 46, GENGAR
 		db SPELL_TAG
 		db MEAN_LOOK, DARK_PULSE, SHADOW_BALL, CONFUSE_RAY
-	dbp 46, ALAKAZAM
-		db BRIGHTPOWDER
-		db DISABLE, PSYCHIC_M, RECOVER, CONFUSE_RAY
+	dbp 46, VAPOREON
+		db SITRUS_BERRY
+		db SCALD, RECOVER, ICE_BEAM, EARTH_POWER
 	dbp 49, MEGANIUM
 		db SITRUS_BERRY
 		db REFLECT, LIGHT_SCREEN, ENERGY_BALL, ANCIENTPOWER
@@ -1732,6 +1748,9 @@ Rival1Group:
 	dbp 46, ALAKAZAM
 		db BRIGHTPOWDER
 		db DISABLE, PSYCHIC_M, RECOVER, CONFUSE_RAY
+	dbp 46, JOLTEON
+		db SITRUS_BERRY
+		db THUNDERBOLT, THUNDER_WAVE, LIGHT_SCREEN, WATER_PULSE
 	dbp 49, TYPHLOSION
 		db SITRUS_BERRY
 		db SMOKESCREEN, QUICK_ATTACK, DIG, FLAMETHROWER
@@ -1753,9 +1772,9 @@ Rival1Group:
 	dbp 46, GENGAR
 		db SPELL_TAG
 		db MEAN_LOOK, DARK_PULSE, SHADOW_BALL, CONFUSE_RAY
-	dbp 46, ALAKAZAM
-		db BRIGHTPOWDER
-		db DISABLE, PSYCHIC_M, RECOVER, CONFUSE_RAY
+	dbp 46, FLAREON
+		db SITRUS_BERRY
+		db FLARE_BLITZ, CRUNCH, BODY_SLAM, SPARK
 	dbp 49, FERALIGATR
 		db SITRUS_BERRY
 		db CRUNCH, SURF, SLASH, SCARY_FACE
@@ -1789,6 +1808,10 @@ Rival2Group:
 		db BRIGHTPOWDER
 		ev_spread 252 SAt, 204 Spe
 		db DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
+	dbp 63, VAPOREON
+		db MYSTIC_WATER
+		ev_spread 252 SAt, 204 HP
+		db SCALD, RECOVER, ICE_BEAM, EARTH_POWER
 	dbp 65, MEGANIUM
 		db MIRACLE_SEED
 		ev_spread 252 Atk, 204 Spe
@@ -1815,10 +1838,10 @@ Rival2Group:
 		db SPELL_TAG
 		ev_spread 252 SAt, 204 Spe
 		db MEAN_LOOK, CURSE, SHADOW_BALL, CONFUSE_RAY
-	dbp 63, ALAKAZAM
-		db BRIGHTPOWDER
+	dbp 63, JOLTEON
+		db MAGNET
 		ev_spread 252 SAt, 204 Spe
-		db DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
+		db THUNDERBOLT, THUNDER_WAVE, LIGHT_SCREEN, WATER_PULSE
 	dbp 65, TYPHLOSION
 		db CHARCOAL
 		ev_spread 204 Atk, 252 SAt
@@ -1845,10 +1868,10 @@ Rival2Group:
 		db SPELL_TAG
 		ev_spread 252 SAt, 204 Spe
 		db MEAN_LOOK, CURSE, SHADOW_BALL, CONFUSE_RAY
-	dbp 63, ALAKAZAM
-		db BRIGHTPOWDER
-		ev_spread 252 SAt, 204 Spe
-		db DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
+	dbp 63, FLAREON
+		db CHARCOAL
+		ev_spread 252 Atk, 204 Spe
+		db FLARE_BLITZ, CRUNCH, EXTREMESPEED, SPARK
 	dbp 65, FERALIGATR
 		db MYSTIC_WATER
 		ev_spread 204 Atk, 252 Spe
@@ -1871,9 +1894,9 @@ Rival2Group:
 	dbp 70, GENGAR
 		db SPELL_TAG
 		db THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	dbp 70, ALAKAZAM
-		db BRIGHTPOWDER
-		db RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
+	dbp 71, VAPOREON
+		db MYSTIC_WATER
+		db SCALD, RECOVER, ICE_BEAM, EARTH_POWER
 	dbp 72, MEGANIUM
 		db LEFTOVERS
 		db PETAL_DANCE, MOONBLAST, LIGHT_SCREEN, ANCIENTPOWER
@@ -1895,9 +1918,9 @@ Rival2Group:
 	dbp 70, GENGAR
 		db SPELL_TAG
 		db THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	dbp 70, ALAKAZAM
-		db BRIGHTPOWDER
-		db RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
+	dbp 71, JOLTEON
+		db MAGNET
+		db THUNDERBOLT, THUNDER_WAVE, LIGHT_SCREEN, WATER_PULSE
 	dbp 72, TYPHLOSION
 		db LEFTOVERS
 		db FIRE_BLAST, FOCUS_BLAST, EARTH_POWER, SMOKESCREEN
@@ -1919,9 +1942,9 @@ Rival2Group:
 	dbp 70, GENGAR
 		db SPELL_TAG
 		db THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	dbp 70, ALAKAZAM
-		db BRIGHTPOWDER
-		db RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
+	dbp 70, FLAREON
+		db CHARCOAL
+		db FLARE_BLITZ, CRUNCH, EXTREMESPEED, SPARK
 	dbp 72, FERALIGATR
 		db LEFTOVERS
 		db SURF, CRUNCH, SLASH, OUTRAGE
@@ -1961,18 +1984,18 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME | TRAINERTYPE_MOVES
 	; party
-	dbp 16, PIDGEY
+	dbp 16, PIDGEOTTO
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 Spe
-		db TACKLE, GUST, MUD_SLAP, QUICK_ATTACK ; default for level
+		db STEEL_WING, GUST, MUD_SLAP, QUICK_ATTACK ; default for level
 	dbp 17, MARILL
 		db NO_ITEM, "@"
 		ev_spread 72 Atk
 		db DEFENSE_CURL, ROLLOUT, BUBBLE_BEAM, DIZZY_PUNCH ; default for level
-	dbp 15, MAREEP
+	dbp 15, PICHU
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 SAt
-		db THUNDER_WAVE, THUNDERSHOCK, MUD_SLAP, SPARK ; default for level
+		db DISARM_VOICE, THUNDERSHOCK, NASTY_PLOT, SING ; default for level
 	dbp 18, BAYLEEF
 		db ORAN_BERRY, "Chicory@"
 		ev_spread 72 HP
@@ -1983,36 +2006,44 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	dbp 16, PIDGEY
+	dbp 16, PIDGEOTTO
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 Spe
+		db STEEL_WING, GUST, MUD_SLAP, QUICK_ATTACK ; default for level
 	dbp 17, SUNKERN
 		db NO_ITEM, "@"
 		ev_spread 36 SAt, 36 Spe
-	dbp 15, MAREEP
+		db LEECH_SEED, MEGA_DRAIN, GROWTH, DEFENSE_CURL ; default for level
+	dbp 15, PICHU
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 SAt
+		db DISARM_VOICE, THUNDERSHOCK, NASTY_PLOT, SING ; default for level
 	dbp 18, QUILAVA
 		db ORAN_BERRY, "Cinder@"
 		ev_spread 72 Spe
+		db FLAME_CHARGE, QUICK_ATTACK, SMOKESCREEN, LEER ; No Light Screen
 	db -1 ; end
 
 	; LYRA1
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	dbp 16, PIDGEY
+	dbp 16, PIDGEOTTO
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 Spe
+		db STEEL_WING, GUST, MUD_SLAP, QUICK_ATTACK ; default for level
 	dbp 17, GROWLITHE
 		db NO_ITEM, "@"
-		ev_spread 36 HP, 36 Atk
-	dbp 15, MAREEP
+		ev_spread 36 SAt, 36 Atk
+		db EMBER, BITE, DOUBLE_KICK, SAFEGUARD  ; default for level
+	dbp 15, PICHU
 		db NO_ITEM, "@"
 		ev_spread 36 HP, 36 SAt
+		db DISARM_VOICE, THUNDERSHOCK, NASTY_PLOT, SING ; default for level
 	dbp 18, CROCONAW
 		db ORAN_BERRY, "Toto@"
 		ev_spread 72 Atk
+		db BITE, WATER_GUN, CUT, SCARY_FACE ; default for level
 	db -1 ; end
 
 	; LYRA1
@@ -2022,18 +2053,23 @@ Lyra1Group:
 	dbp 33, PIDGEOTTO
 		db NO_ITEM, "@"
 		ev_spread 100 HP, 100 Spe
-	dbp 34, GROWLITHE
+		db STEEL_WING, WING_ATTACK, MUD_SLAP, QUICK_ATTACK ; default for level
+	dbp 34, VULPIX
 		db NO_ITEM, "@"
-		ev_spread 100 HP, 100 Atk
+		ev_spread 100 SAt, 100 Spe
+		db FLAMETHROWER, EXTRASENSORY, HEX, HYPNOSIS ; default for level
 	dbp 34, AZUMARILL
 		db NO_ITEM, "@"
 		ev_spread 200 Atk
-	dbp 32, FLAAFFY
+		db PLAY_ROUGH, AQUA_TAIL, ROLLOUT, ICE_PUNCH
+	dbp 36, PIKACHU
 		db NO_ITEM, "@"
-		ev_spread 100 HP, 100 SAt
+		ev_spread 100 SAt, 100 Spe
+		db THUNDER_WAVE, THUNDERBOLT, NASTY_PLOT, SWIFT ; default for level
 	dbp 37, BAYLEEF
-		db ORAN_BERRY, "Chicory@"
+		db SITRUS_BERRY, "Chicory@"
 		ev_spread 200 HP
+		db DAZZLINGLEAM, EARTH_POWER, ENERGY_BALL, SING ; default for level
 	db -1 ; end
 
 	; LYRA1
@@ -2043,111 +2079,139 @@ Lyra1Group:
 	dbp 33, PIDGEOTTO
 		db NO_ITEM, "@"
 		ev_spread 100 HP, 100 Spe
+		db STEEL_WING, WING_ATTACK, MUD_SLAP, QUICK_ATTACK
 	dbp 34, SUNFLORA
 		db NO_ITEM, "@"
 		ev_spread 100 SAt, 100 Spe
-	dbp 34, AZUMARILL
+		db SOLAR_BEAM, FLAMETHROWER, LEECH_SEED, SUNNY_DAY ; default for level
+	dbp 34, SEADRA
 		db NO_ITEM, "@"
-		ev_spread 200 Atk
-	dbp 32, FLAAFFY
+		ev_spread 200 SAt
+		db SURF, DRAGONBREATH, HYPER_BEAM, SMOKESCREEN
+	dbp 36, PIKACHU
+		db NO_ITEM, "@"
+		ev_spread 100 SAt, 100 Spe
+		db THUNDER_WAVE, THUNDERBOLT, NASTY_PLOT, SWIFT ; default for level
+	dbp 37, QUILAVA
+		db SITRUS_BERRY, "Cinder@"
+		ev_spread 200 Spe
+		db EXTRASENSORY, FLAMETHROWER, DIG, QUICK_ATTACK
+	db -1 ; end
+
+	; LYRA1
+	db "Lyra@"
+	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
+	; party
+	dbp 33, PIDGEOTTO
+		db NO_ITEM, "@"
+		ev_spread 100 HP, 100 Spe
+		db STEEL_WING, WING_ATTACK, MUD_SLAP, QUICK_ATTACK
+	dbp 34, EXEGGCUTE
 		db NO_ITEM, "@"
 		ev_spread 100 HP, 100 SAt
-	dbp 37, QUILAVA
-		db ORAN_BERRY, "Cinder@"
-		ev_spread 200 Spe
-	db -1 ; end
-
-	; LYRA1
-	db "Lyra@"
-	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
-	; party
-	dbp 33, PIDGEOTTO
-		db NO_ITEM, "@"
-		ev_spread 100 HP, 100 Spe
-	dbp 34, SUNFLORA
-		db NO_ITEM, "@"
-		ev_spread 100 SAt, 100 Spe
+		db ANCIENTPOWER, POISONPOWDER, PSYBEAM, MEGA_DRAIN
 	dbp 34, GROWLITHE
 		db NO_ITEM, "@"
 		ev_spread 100 HP, 100 Atk
-	dbp 32, FLAAFFY
+		db FLAMETHROWER, BITE, DOUBLE_KICK, THRASH
+	dbp 36, PIKACHU
 		db NO_ITEM, "@"
-		ev_spread 100 HP, 100 SAt
+		ev_spread 100 SAt, 100 Spe
+		db THUNDER_WAVE, THUNDERBOLT, NASTY_PLOT, SWIFT ; default for level
 	dbp 37, CROCONAW
-		db ORAN_BERRY, "Toto@"
+		db SITRUS_BERRY, "Toto@"
 		ev_spread 200 Atk
+		db CRUNCH, WATERFALL, ICE_PUNCH, METAL_CLAW ; default for level
 	db -1 ; end
 
 	; LYRA1
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	dbp 44, PIDGEOT
+	dbp 45, PIDGEOT
 		db NO_ITEM, "@"
 		ev_spread 132 HP, 132 Spe
-	dbp 43, GIRAFARIG
+		db STEEL_WING, AIR_SLASH, MUD_SLAP, EXTREMESPEED
+	dbp 44, PUPITAR
 		db NO_ITEM, "@"
 		ev_spread 132 Atk, 132 Spe
-	dbp 45, ARCANINE
+		db CRUNCH, ROCK_SLIDE, SCREECH, EARTHQUAKE
+	dbp 45, NINETALES
 		db NO_ITEM, "@"
-		ev_spread 132 HP, 132 Atk
+		ev_spread 132 SAt, 132 Spe
+		db FIRE_BLAST, EXTRASENSORY, SHADOW_BALL, HYPNOSIS
 	dbp 45, AZUMARILL
 		db NO_ITEM, "@"
-		ev_spread 252 Atk, 12 Spe
-	dbp 46, AMPHAROS
+		ev_spread 252 Atk, 100 Spe
+		db PLAY_ROUGH, WATERFALL, CLOSE_COMBAT, ICE_PUNCH
+	dbp 46, RAICHU, FEMALE | ALOLAN_FORM
 		db NO_ITEM, "@"
-		ev_spread 132 HP, 132 SAt
+		ev_spread 252 SAt, 100 Spe
+		db PSYCHIC_M, THUNDERBOLT, NASTY_PLOT, SURF ; default for level
 	dbp 47, MEGANIUM
 		db SITRUS_BERRY, "Chicory@"
-		ev_spread 252 HP, 12 SAt
+		ev_spread 252 HP, 100 SAt
+		db DAZZLINGLEAM, EARTH_POWER, ENERGY_BALL, SING
 	db -1 ; end
 
 	; LYRA1
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	dbp 44, PIDGEOT
+	dbp 45, PIDGEOT
 		db NO_ITEM, "@"
 		ev_spread 132 HP, 132 Spe
-	dbp 43, GIRAFARIG
+		db STEEL_WING, AIR_SLASH, MUD_SLAP, EXTREMESPEED
+	dbp 44, PUPITAR
 		db NO_ITEM, "@"
 		ev_spread 132 Atk, 132 Spe
+		db CRUNCH, ROCK_SLIDE, SCREECH, EARTHQUAKE
 	dbp 45, SUNFLORA
 		db NO_ITEM, "@"
 		ev_spread 132 SAt, 132 Spe
-	dbp 45, AZUMARILL
+		db SOLAR_BEAM, FLAMETHROWER, LEECH_SEED, SUNNY_DAY
+	dbp 45, KINGDRA
 		db NO_ITEM, "@"
-		ev_spread 252 Atk, 12 Spe
-	dbp 46, AMPHAROS
+		ev_spread 100 HP, 252 SAt
+		db SURF, DRAGON_PULSE, HYPER_BEAM, SMOKESCREEN
+	dbp 46, RAICHU, FEMALE | ALOLAN_FORM
 		db NO_ITEM, "@"
-		ev_spread 132 HP, 132 SAt
+		ev_spread 252 SAt, 100 Spe
+		db PSYCHIC_M, THUNDERBOLT, NASTY_PLOT, SURF
 	dbp 47, TYPHLOSION
 		db SITRUS_BERRY, "Cinder@"
 		ev_spread 12 Atk, 252 Spe
+		db EXTRASENSORY, FLAMETHROWER, EARTH_POWER, THUNDERPUNCH
 	db -1 ; end
 
 	; LYRA1
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	dbp 44, PIDGEOT
+	dbp 45, PIDGEOT
 		db NO_ITEM, "@"
 		ev_spread 132 HP, 132 Spe
-	dbp 43, GIRAFARIG
+		db STEEL_WING, AIR_SLASH, MUD_SLAP, EXTREMESPEED
+	dbp 44, PUPITAR
 		db NO_ITEM, "@"
 		ev_spread 132 Atk, 132 Spe
-	dbp 45, SUNFLORA
+		db CRUNCH, ROCK_SLIDE, SCREECH, EARTHQUAKE
+	dbp 45, EXEGGUTOR, FEMALE | ALOLAN_FORM
 		db NO_ITEM, "@"
-		ev_spread 132 SAt, 132 Spe
+		ev_spread 132 HP, 132 SAt
+		db POWER_WHIP, DRAGON_PULSE, SLEEP_POWDER, GIGA_DRAIN
 	dbp 45, ARCANINE
 		db NO_ITEM, "@"
 		ev_spread 132 HP, 132 Atk
-	dbp 46, AMPHAROS
+		db FLAMETHROWER, CRUNCH, CLOSE_COMBAT, EXTREMESPEED
+	dbp 46, RAICHU, FEMALE | ALOLAN_FORM
 		db NO_ITEM, "@"
-		ev_spread 132 HP, 132 SAt
+		ev_spread 252 SAt, 100 Spe
+		db PSYCHIC_M, THUNDERBOLT, NASTY_PLOT, SURF
 	dbp 47, FERALIGATR
 		db SITRUS_BERRY, "Toto@"
 		ev_spread 252 Atk, 12 Spe
+		db CRUNCH, WATERFALL, ICE_PUNCH, METAL_CLAW
 	db -1 ; end
 
 
@@ -2158,18 +2222,30 @@ Lyra2Group:
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_NICKNAME
 	; party
-	dbp 69, PIDGEOT
-		db NO_ITEM, "@"
-	dbp 70, ARCANINE
-		db NO_ITEM, "@"
+	dbp 70, PIDGEOT
+		db SITRUS_BERRY, "@"
+		ev_spread 252 HP, 252 Spe
+		db STEEL_WING, AIR_SLASH, MUD_SLAP, EXTREMESPEED
+	dbp 70, TYRANITAR
+		db SITRUS_BERRY, "@"
+		ev_spread 252 HP, 252 Atk
+		db CRUNCH, ROCK_SLIDE, SCREECH, EARTHQUAKE
+	dbp 70, NINETALES
+		db SITRUS_BERRY, "@"
+		ev_spread 252 SAt, 252 Spe
+		db FIRE_BLAST, EXTRASENSORY, SHADOW_BALL, HYPNOSIS
 	dbp 70, AZUMARILL
-		db NO_ITEM, "@"
-	dbp 71, AMPHAROS
-		db NO_ITEM, "@"
-	dbp 68, FARIGIRAF
-		db NO_ITEM, "@"
+		db SITRUS_BERRY, "@"
+		ev_spread 252 Atk, 252 Spe
+		db PLAY_ROUGH, WATERFALL, CLOSE_COMBAT, ICE_PUNCH
+	dbp 71, RAICHU, FEMALE | ALOLAN_FORM
+		db SITRUS_BERRY, "@"
+		ev_spread 252 SAt, 252 Spe
+		db PSYCHIC_M, THUNDERBOLT, NASTY_PLOT, SURF ; default for level
 	dbp 72, MEGANIUM
 		db SITRUS_BERRY, "Chicory@"
+		ev_spread 252 HP, 252 SAt
+		db DAZZLINGLEAM, EARTH_POWER, ENERGY_BALL, SING
 	db -1 ; end
 
 	; LYRA2
