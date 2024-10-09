@@ -4019,9 +4019,9 @@ CyndaquilEvosAttacks:
 	db 1, LEER
 	db 6, SMOKESCREEN
 	db 10, EMBER
-	db 13, QUICK_ATTACK
-	db 15, DEFENSE_CURL ; Flame Wheel → Defense Curl
-	db 19, FLAME_CHARGE ; Defense Curl → Flame Charge
+	db 12, QUICK_ATTACK
+	db 14, DEFENSE_CURL ; Flame Wheel → Defense Curl
+	db 16, FLAME_CHARGE ; Defense Curl → Flame Charge
 	db 23, DIG ; Flame Charge → TM move
 	db 28, SWIFT
 	db 30, EXTRASENSORY
@@ -4043,7 +4043,7 @@ QuilavaEvosAttacks:
 	db 10, EMBER
 	db 13, QUICK_ATTACK
 	db 15, DEFENSE_CURL ; Flame Wheel → Defense Curl
-	db 22, FLAME_CHARGE ; Defense Curl → Flame Charge
+	db 18, FLAME_CHARGE ; Defense Curl → Flame Charge
 	db 25, DIG ; Flame Charge → TM move
 	db 30, SWIFT
 	db 34, EXTRASENSORY
