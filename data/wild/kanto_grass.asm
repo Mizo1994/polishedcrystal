@@ -6,26 +6,26 @@
 	wildmon 54, DIGLETT
 	wildmon 56, DIGLETT
 	wildmon 53, DIGLETT
-	wildmon 55, DIGLETT
+	wildmon 55, DIGLETT, ALOLAN_FORM
 	wildmon 57, DUGTRIO
 	wildmon 58, DUGTRIO
-	wildmon 60, DUGTRIO
+	wildmon 60, DUGTRIO, ALOLAN_FORM
 	; day
 	wildmon 54, DIGLETT
 	wildmon 56, DIGLETT
 	wildmon 53, DIGLETT
-	wildmon 55, DIGLETT
+	wildmon 55, DIGLETT, ALOLAN_FORM
 	wildmon 57, DUGTRIO
 	wildmon 58, DUGTRIO
-	wildmon 60, DUGTRIO
+	wildmon 60, DUGTRIO, ALOLAN_FORM
 	; nite
 	wildmon 54, DIGLETT
 	wildmon 56, DIGLETT
 	wildmon 53, DIGLETT
-	wildmon 55, DIGLETT
+	wildmon 55, DIGLETT, ALOLAN_FORM
 	wildmon 57, DUGTRIO
 	wildmon 58, DUGTRIO
-	wildmon 60, DUGTRIO
+	wildmon 60, DUGTRIO, ALOLAN_FORM
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MOON_1F
