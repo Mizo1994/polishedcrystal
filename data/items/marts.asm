@@ -109,7 +109,9 @@ Goldenrod2FMart1:
 Goldenrod2FMart2:
 	db 10 ; # items
 	db POKE_BALL
+	db PREMIER_BALL
 	db GREAT_BALL
+	db ULTRA_BALL
 	db LUXURY_BALL
 	db TIMER_BALL
 	db QUICK_BALL
@@ -123,7 +125,9 @@ Goldenrod2FMart2:
 Goldenrod2FMart2Eevee:
 	db 11 ; # items
 	db POKE_BALL
+	db PREMIER_BALL
 	db GREAT_BALL
+	db ULTRA_BALL
 	db LUXURY_BALL
 	db TIMER_BALL
 	db QUICK_BALL
@@ -157,6 +161,12 @@ Celadon5FMart1:
 	db CALCIUM
 	db ZINC
 	db HP_UP
+	db POMEG_BERRY
+	db KELPSY_BERRY
+	db QUALOT_BERRY
+	db HONDEW_BERRY
+	db GREPA_BERRY
+	db TAMATO_BERRY
 	db -1
 
 Goldenrod5FTMMart:
@@ -175,8 +185,15 @@ GoldenrodHarborMart:
 	db 5 ; # items
 	db ETHER
 	db ELIXIR
-	db MIRROR_HERB
 	db DESTINY_KNOT
+	db SCOPE_LENS
+	db WIDE_LENS
+	db ZOOM_LENS
+	db BRIGHTPOWDER
+	db LINKING_CORD
+	db MIRROR_HERB
+	db SILVER_LEAF
+	db GOLD_LEAF
 	db SURF_MAIL
 	db -1
 
@@ -186,6 +203,7 @@ UndergroundMart:
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db MINT_LEAF
 	db -1
 
 EcruteakMart:
@@ -251,9 +269,11 @@ MahoganyMart2:
 	db GREAT_BALL
 	db SUPER_POTION
 	db HYPER_POTION
+	db FULL_HEAL
 	db SUPER_REPEL
 	db REVIVE
 	db FLOWER_MAIL
+	db ODD_SOUVENIR
 	db -1
 
 BlackthornMart:
@@ -274,13 +294,20 @@ BlackthornMart:
 IndigoPlateauMart:
 	db 8 ; # items
 	db ULTRA_BALL
+	db TIMER_BALL
+	db QUICK_BALL
 	db MAX_REPEL
-	db HYPER_POTION
-	db MAX_POTION
+	db MAX_ELIXIR
+	db MAX_REVIVE
 	db FULL_RESTORE
-	db REVIVE
-	db FULL_HEAL
+	db RARE_CANDY
+	db PP_MAX
+	db SACRED_ASH
+	db ABILITYPATCH
+	db ABILITY_CAP
 	db EXP_SHARE
+	db LUCKY_EGG
+	db EVIOLITE
 	db -1
 
 ViridianMart:
@@ -376,6 +403,7 @@ Celadon2FMart1:
 	db FULL_HEAL
 	db REVIVE
 	db MAX_REVIVE
+	db MINT_LEAF
 	db -1
 
 Celadon2FMart2:
@@ -383,11 +411,17 @@ Celadon2FMart2:
 	db POKE_BALL
 	db GREAT_BALL
 	db ULTRA_BALL
+	db HEAL_BALL
+	db LUXURY_BALL
 	db QUICK_BALL
 	db TIMER_BALL
+	db NEST_BALL
+	db NET_BALL
+	db DIVE_BALL
+	db REPEAT_BALL
+	db DUSK_BALL
+	db LUXURY_BALL
 	db ESCAPE_ROPE
-	db REPEL
-	db SUPER_REPEL
 	db MAX_REPEL
 	db -1
 
@@ -406,11 +440,16 @@ Celadon3FTMMart:
 Celadon4FMart:
 	db 10 ; # items
 	db POKE_DOLL
+	db ODD_SOUVENIR
 	db FIRE_STONE
 	db WATER_STONE
 	db THUNDERSTONE
 	db LEAF_STONE
 	db ICE_STONE
+	db SUN_STONE
+	db DUSK_STONE
+	db MOON_STONE
+	db SHINY_STONE
 	db LINKING_CORD
 	db EXP_SHARE
 	db LOVELY_MAIL
@@ -435,8 +474,16 @@ SilphCoMart:
 	db MAX_POTION
 	db MAX_REPEL
 	db DREAM_BALL
+	db CHERISH_BALL
 	db UP_GRADE
 	db DUBIOUS_DISC
+	db DRAGON_SCALE
+	db METAL_COAT
+	db PROTECTOR
+	db ELECTIRIZER
+	db MAGMARIZER
+	db RAZOR_FANG
+	db RAZOR_CLAW
 	db -1
 
 FuchsiaMart:
@@ -457,6 +504,7 @@ ShamoutiMart1:
 	db POWER_HERB
 	db WHITE_HERB
 	db BIG_ROOT
+	db BOTTLE_CAP
 	db -1
 
 ShamoutiMart1Souvenir:
@@ -466,6 +514,7 @@ ShamoutiMart1Souvenir:
 	db POWER_HERB
 	db WHITE_HERB
 	db BIG_ROOT
+	db BOTTLE_CAP
 	db -1
 
 ShamoutiMart2:
@@ -480,72 +529,72 @@ ShamoutiMart2:
 
 BattleTowerMart1:
 	db 7 ; # items
-	db CHOICE_BAND,  48
-	db CHOICE_SCARF, 48
-	db CHOICE_SPECS, 48
-	db EXPERT_BELT,  32
-	db MUSCLE_BAND,  32
-	db WISE_GLASSES, 32
-	db METRONOME_I,  32
+	db CHOICE_BAND,  24
+	db CHOICE_SCARF, 24
+	db CHOICE_SPECS, 24
+	db EXPERT_BELT,  16
+	db MUSCLE_BAND,  16
+	db WISE_GLASSES, 16
+	db METRONOME_I,  16
 	db -1
 
 BattleTowerMart2:
 	db 9 ; # items
-	db RARE_CANDY,   16
-	db PP_MAX,       64
-	db ABILITY_CAP,  32
-	db WEAK_POLICY,  48
-	db BLUNDRPOLICY, 48
-	db SCOPE_LENS,   16
-	db WIDE_LENS,    16
-	db ZOOM_LENS,    16
-	db BRIGHTPOWDER, 24
+	db RARE_CANDY,   8
+	db PP_MAX,       32
+	db ABILITY_CAP,  16
+	db WEAK_POLICY,  24
+	db BLUNDRPOLICY, 24
+	db SCOPE_LENS,   8
+	db WIDE_LENS,    8
+	db ZOOM_LENS,    8
+	db BRIGHTPOWDER, 8
 	db -1
 
 BattleTowerMart3:
 	db 7 ; # items
-	db MACHO_BRACE,  16
-	db POWER_WEIGHT, 24
-	db POWER_BRACER, 24
-	db POWER_BELT,   24
-	db POWER_LENS,   24
-	db POWER_BAND,   24
-	db POWER_ANKLET, 24
+	db MACHO_BRACE,  8
+	db POWER_WEIGHT, 12
+	db POWER_BRACER, 12
+	db POWER_BELT,   12
+	db POWER_LENS,   12
+	db POWER_BAND,   12
+	db POWER_ANKLET, 12
 	db -1
 
 BattleFactoryMart1:
 	db 9 ; # items
-	db FOCUS_BAND,   16
-	db FOCUS_SASH,   48
-	db ASSAULT_VEST, 48
-	db PROTECT_PADS, 16
-	db ROCKY_HELMET, 48
-	db SAFE_GOGGLES, 32
-	db HEAVY_BOOTS,  48
-	db PUNCHINGLOVE, 16
-	db COVERT_CLOAK, 16
+	db FOCUS_BAND,   8
+	db FOCUS_SASH,   24
+	db ASSAULT_VEST, 24
+	db PROTECT_PADS, 8
+	db ROCKY_HELMET, 24
+	db SAFE_GOGGLES, 16
+	db HEAVY_BOOTS,  24
+	db PUNCHINGLOVE, 8
+	db COVERT_CLOAK, 8
 	db -1
 
 BattleFactoryMart2:
 	db 8 ; # items
-	db EJECT_BUTTON, 32
-	db EJECT_PACK,   32
-	db RED_CARD,     24
-	db IRON_BALL,    32
-	db LAGGING_TAIL, 24
-	db FLAME_ORB,    32
-	db TOXIC_ORB,    32
-	db BLACK_SLUDGE, 32
+	db EJECT_BUTTON, 16
+	db EJECT_PACK,   16
+	db RED_CARD,     12
+	db IRON_BALL,    16
+	db LAGGING_TAIL, 12
+	db FLAME_ORB,    16
+	db TOXIC_ORB,    16
+	db BLACK_SLUDGE, 16
 	db -1
 
 BattleFactoryMart3:
 	db 8 ; # items
-	db CLEAR_AMULET, 16
-	db BINDING_BAND, 32
-	db GRIP_CLAW,    32
-	db LOADED_DICE,  16
-	db THROAT_SPRAY, 24
-	db ROOM_SERVICE, 24
-	db LIFE_ORB,     48
-	db MINT_LEAF,    32
+	db CLEAR_AMULET, 8
+	db BINDING_BAND, 16
+	db GRIP_CLAW,    16
+	db LOADED_DICE,  8
+	db THROAT_SPRAY, 12
+	db ROOM_SERVICE, 12
+	db LIFE_ORB,     24
+	db MINT_LEAF,    12
 	db -1
